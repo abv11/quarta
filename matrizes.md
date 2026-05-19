@@ -6,26 +6,21 @@
 
 # 1. O QUE É UMA MATRIZ?
 
-Uma **matriz** é uma tabela organizada em **linhas** e **colunas**.
+Uma matriz é uma tabela organizada em linhas e colunas.
 
 Exemplo:
 
-$$
-A=
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6
-\end{bmatrix}
-$$
+|   |   |   |
+|---|---|---|
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
 
-- possui **2 linhas**
-- possui **3 colunas**
+- possui 2 linhas
+- possui 3 colunas
 
-Então sua ordem é:
+Ordem:
 
-$$
-2 \times 3
-$$
+2 × 3
 
 ---
 
@@ -33,30 +28,25 @@ $$
 
 Uma matriz qualquer pode ser escrita assim:
 
-$$
-A_{m\times n}=(a_{ij})
-$$
+A(m×n) = (aij)
 
 Onde:
 
-- \(m\) = número de linhas
-- \(n\) = número de colunas
-- \(a_{ij}\) = elemento da linha \(i\) e coluna \(j\)
+- m = número de linhas
+- n = número de colunas
+- aij = elemento da linha i e coluna j
 
 Exemplo:
 
-$$
-A=
-\begin{bmatrix}
-7 & 8\\
-1 & 9
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 7 | 8 |
+| 1 | 9 |
 
-- \(a_{11}=7\)
-- \(a_{12}=8\)
-- \(a_{21}=1\)
-- \(a_{22}=9\)
+- a11 = 7
+- a12 = 8
+- a21 = 1
+- a22 = 9
 
 ---
 
@@ -66,54 +56,41 @@ A lei de formação é a fórmula usada para descobrir os elementos da matriz.
 
 Exemplo:
 
-$$
-a_{ij}=2i+j
-$$
+aij = 2i + j
 
 Isso significa:
 
-- substitui \(i\) pela linha
-- substitui \(j\) pela coluna
+- substitui i pela linha
+- substitui j pela coluna
 
-Se a matriz for \(2\times2\):
+Se a matriz for 2×2:
 
 ---
 
 ## Calculando
 
-### Elemento \(a_{11}\)
+### Elemento a11
 
-$$
-a_{11}=2(1)+1=3
-$$
+a11 = 2(1)+1 = 3
 
-### Elemento \(a_{12}\)
+### Elemento a12
 
-$$
-a_{12}=2(1)+2=4
-$$
+a12 = 2(1)+2 = 4
 
-### Elemento \(a_{21}\)
+### Elemento a21
 
-$$
-a_{21}=2(2)+1=5
-$$
+a21 = 2(2)+1 = 5
 
-### Elemento \(a_{22}\)
+### Elemento a22
 
-$$
-a_{22}=2(2)+2=6
-$$
+a22 = 2(2)+2 = 6
 
 Logo:
 
-$$
-A=
-\begin{bmatrix}
-3 & 4\\
-5 & 6
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 3 | 4 |
+| 5 | 6 |
 
 ---
 
@@ -125,17 +102,11 @@ $$
 
 Só possui uma linha.
 
-$$
-\begin{bmatrix}
-1 & 2 & 3
-\end{bmatrix}
-$$
+| 1 | 2 | 3 |
 
 Ordem:
 
-$$
-1\times3
-$$
+1 × 3
 
 ---
 
@@ -143,13 +114,11 @@ $$
 
 Só possui uma coluna.
 
-$$
-\begin{bmatrix}
-4\\
-7\\
-9
-\end{bmatrix}
-$$
+|   |
+|---|
+| 4 |
+| 7 |
+| 9 |
 
 ---
 
@@ -157,18 +126,14 @@ $$
 
 Mesmo número de linhas e colunas.
 
-$$
-2\times2,\ 3\times3,\ 4\times4...
-$$
+2×2, 3×3, 4×4...
 
 Exemplo:
 
-$$
-\begin{bmatrix}
-1 & 2\\
-3 & 4
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 1 | 2 |
+| 3 | 4 |
 
 ---
 
@@ -176,12 +141,10 @@ $$
 
 Todos os elementos são zero.
 
-$$
-\begin{bmatrix}
-0 & 0\\
-0 & 0
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 0 | 0 |
+| 0 | 0 |
 
 ---
 
@@ -189,28 +152,14 @@ $$
 
 Diagonal principal com 1 e resto 0.
 
-$$
-I_2=
-\begin{bmatrix}
-1 & 0\\
-0 & 1
-\end{bmatrix}
-$$
-
-$$
-I_3=
-\begin{bmatrix}
-1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 1 | 0 |
+| 0 | 1 |
 
 Ela funciona como o número 1 nas multiplicações.
 
-$$
-AI=A
-$$
+AI = A
 
 ---
 
@@ -223,27 +172,21 @@ Duas matrizes são iguais quando:
 
 Exemplo:
 
-$$
-\begin{bmatrix}
-x & 2\\
-3 & y
-\end{bmatrix}
+| x | 2 |
+|---|---|
+| 3 | y |
+
 =
-\begin{bmatrix}
-1 & 2\\
-3 & 5
-\end{bmatrix}
-$$
+
+| 1 | 2 |
+|---|---|
+| 3 | 5 |
 
 Comparando posição por posição:
 
-$$
-x=1
-$$
+x = 1
 
-$$
-y=5
-$$
+y = 5
 
 ---
 
@@ -253,38 +196,26 @@ Só pode somar matrizes de MESMA ORDEM.
 
 Somamos elemento por elemento.
 
-$$
-A=
-\begin{bmatrix}
-1 & 2\\
-3 & 4
-\end{bmatrix}
-$$
+A:
 
-$$
-B=
-\begin{bmatrix}
-5 & 6\\
-7 & 8
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 1 | 2 |
+| 3 | 4 |
 
-$$
-A+B=
-\begin{bmatrix}
-1+5 & 2+6\\
-3+7 & 4+8
-\end{bmatrix}
-$$
+B:
+
+|   |   |
+|---|---|
+| 5 | 6 |
+| 7 | 8 |
 
 Resultado:
 
-$$
-\begin{bmatrix}
-6 & 8\\
-10 & 12
-\end{bmatrix}
-$$
+|    |    |
+|----|----|
+| 6  | 8  |
+| 10 | 12 |
 
 ---
 
@@ -292,9 +223,7 @@ $$
 
 Mesma ideia da soma.
 
-$$
-A-B
-$$
+A − B
 
 Subtrai elemento por elemento.
 
@@ -306,18 +235,19 @@ Escalar = número real.
 
 Multiplica TODOS os elementos.
 
-$$
-2\cdot
-\begin{bmatrix}
-1 & 3\\
-4 & 5
-\end{bmatrix}
+2 ·
+
+|   |   |
+|---|---|
+| 1 | 3 |
+| 4 | 5 |
+
 =
-\begin{bmatrix}
-2 & 6\\
-8 & 10
-\end{bmatrix}
-$$
+
+|   |    |
+|---|----|
+| 2 | 6  |
+| 8 | 10 |
 
 ---
 
@@ -329,9 +259,7 @@ A parte que mais derruba gente.
 
 Para multiplicar:
 
-$$
-A_{m\times n}\cdot B_{n\times p}
-$$
+(m×n)(n×p)
 
 o número de colunas da primeira TEM que ser igual ao número de linhas da segunda.
 
@@ -339,17 +267,13 @@ o número de colunas da primeira TEM que ser igual ao número de linhas da segun
 
 ## Exemplo
 
-$$
-A_{2\times3}\cdot B_{3\times2}
-$$
+(2×3)(3×2)
 
 PODE multiplicar.
 
-Resultado será:
+Resultado:
 
-$$
-2\times2
-$$
+2×2
 
 ---
 
@@ -357,23 +281,19 @@ $$
 
 Multiplica linha por coluna.
 
-Exemplo:
+A:
 
-$$
-A=
-\begin{bmatrix}
-1 & 2\\
-3 & 4
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 1 | 2 |
+| 3 | 4 |
 
-$$
-B=
-\begin{bmatrix}
-5 & 6\\
-7 & 8
-\end{bmatrix}
-$$
+B:
+
+|   |   |
+|---|---|
+| 5 | 6 |
+| 7 | 8 |
 
 ---
 
@@ -381,13 +301,9 @@ $$
 
 Linha 1 × coluna 1:
 
-$$
-1\cdot5+2\cdot7
-$$
+1·5 + 2·7
 
-$$
-5+14=19
-$$
+5 + 14 = 19
 
 ---
 
@@ -395,13 +311,9 @@ $$
 
 Linha 1 × coluna 2:
 
-$$
-1\cdot6+2\cdot8
-$$
+1·6 + 2·8
 
-$$
-6+16=22
-$$
+6 + 16 = 22
 
 ---
 
@@ -409,13 +321,9 @@ $$
 
 Linha 2 × coluna 1:
 
-$$
-3\cdot5+4\cdot7
-$$
+3·5 + 4·7
 
-$$
-15+28=43
-$$
+15 + 28 = 43
 
 ---
 
@@ -423,23 +331,16 @@ $$
 
 Linha 2 × coluna 2:
 
-$$
-3\cdot6+4\cdot8
-$$
+3·6 + 4·8
 
-$$
-18+32=50
-$$
+18 + 32 = 50
 
 Resultado:
 
-$$
-AB=
-\begin{bmatrix}
-19 & 22\\
-43 & 50
-\end{bmatrix}
-$$
+|    |    |
+|----|----|
+| 19 | 22 |
+| 43 | 50 |
 
 ---
 
@@ -453,33 +354,25 @@ ESSA PARTE DESPENCA EM PROVA.
 
 ## COMUTATIVA
 
-$$
-A+B=B+A
-$$
+A + B = B + A
 
 ---
 
 ## ASSOCIATIVA
 
-$$
-(A+B)+C=A+(B+C)
-$$
+(A + B) + C = A + (B + C)
 
 ---
 
 ## ELEMENTO NEUTRO
 
-$$
-A+0=A
-$$
+A + 0 = A
 
 ---
 
 ## ELEMENTO OPOSTO
 
-$$
-A+(-A)=0
-$$
+A + (−A) = 0
 
 ---
 
@@ -487,37 +380,27 @@ $$
 
 ## ASSOCIATIVA
 
-$$
-(AB)C=A(BC)
-$$
+(AB)C = A(BC)
 
 ---
 
 ## DISTRIBUTIVA
 
-$$
-A(B+C)=AB+AC
-$$
+A(B + C) = AB + AC
 
-$$
-(A+B)C=AC+BC
-$$
+(A + B)C = AC + BC
 
 ---
 
 ## ELEMENTO NEUTRO
 
-$$
-AI=IA=A
-$$
+AI = IA = A
 
 ---
 
 ## NÃO É COMUTATIVA
 
-$$
-AB\neq BA
-$$
+AB ≠ BA
 
 ---
 
@@ -525,40 +408,29 @@ $$
 
 Troca linhas por colunas.
 
-$$
-A=
-\begin{bmatrix}
-1 & 2 & 3\\
-4 & 5 & 6
-\end{bmatrix}
-$$
+A:
 
-Então:
+| 1 | 2 | 3 |
+|---|---|---|
+| 4 | 5 | 6 |
 
-$$
-A^T=
-\begin{bmatrix}
-1 & 4\\
-2 & 5\\
-3 & 6
-\end{bmatrix}
-$$
+AT:
+
+|   |   |
+|---|---|
+| 1 | 4 |
+| 2 | 5 |
+| 3 | 6 |
 
 ---
 
 # PROPRIEDADES DA TRANSPOSTA
 
-$$
-(A^T)^T=A
-$$
+(AT)T = A
 
-$$
-(A+B)^T=A^T+B^T
-$$
+(A + B)T = AT + BT
 
-$$
-(AB)^T=B^TA^T
-$$
+(AB)T = BTAT
 
 ---
 
@@ -568,43 +440,30 @@ $$
 
 Exemplo:
 
-$$
-X+
-\begin{bmatrix}
-1 & 2\\
-3 & 4
-\end{bmatrix}
+X +
+
+|   |   |
+|---|---|
+| 1 | 2 |
+| 3 | 4 |
+
 =
-\begin{bmatrix}
-5 & 6\\
-7 & 8
-\end{bmatrix}
-$$
 
-Para achar \(X\):
+|   |   |
+|---|---|
+| 5 | 6 |
+| 7 | 8 |
 
-$$
-X=
-\begin{bmatrix}
-5 & 6\\
-7 & 8
-\end{bmatrix}
--
-\begin{bmatrix}
-1 & 2\\
-3 & 4
-\end{bmatrix}
-$$
+Para achar X:
+
+X = B − A
 
 Resultado:
 
-$$
-X=
-\begin{bmatrix}
-4 & 4\\
-4 & 4
-\end{bmatrix}
-$$
+|   |   |
+|---|---|
+| 4 | 4 |
+| 4 | 4 |
 
 ---
 
@@ -614,15 +473,13 @@ $$
 
 ERRADO.
 
-$$
-2\times2 + 3\times3
-$$
+2×2 + 3×3
 
 não existe.
 
 ---
 
-## 2. ACHAR QUE \(AB=BA\)
+## 2. ACHAR QUE AB = BA
 
 Quase nunca.
 
@@ -630,17 +487,11 @@ Quase nunca.
 
 ## 3. ERRAR A ORDEM DA MATRIZ RESULTANTE
 
-Se:
-
-$$
-(2\times3)\cdot(3\times5)
-$$
+(2×3)(3×5)
 
 resultado:
 
-$$
-2\times5
-$$
+2×5
 
 ---
 
@@ -656,58 +507,36 @@ Multiplicação de matrizes NÃO funciona assim.
 
 # 14. RESUMO ULTRA RÁPIDO DE VÉSPERA
 
-$$
-A+B
-$$
+A + B
 
-somar elemento por elemento.
+→ somar elemento por elemento
 
 ---
 
-$$
 AB
-$$
 
-linha × coluna.
-
----
-
-$$
-AB\neq BA
-$$
-
-quase sempre.
+→ linha × coluna
 
 ---
 
-$$
-AI=A
-$$
+AB ≠ BA
 
-identidade não muda nada.
+→ quase sempre
 
 ---
 
-$$
-(A+B)^T=A^T+B^T
-$$
+AI = A
 
-transposta distribui na soma.
+→ identidade não muda nada
 
 ---
 
-$$
-(AB)^T=B^TA^T
-$$
+(AB)T = BTAT
 
-INVERTE A ORDEM.
+→ INVERTE A ORDEM
 
 ---
 
-$$
-X+A=B
-$$
+X + A = B
 
-$$
-X=B-A
-$$
+X = B − A
